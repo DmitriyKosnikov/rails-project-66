@@ -1,0 +1,7 @@
+ru:
+  application:
+    title: Анализатор репозиториев
+    navbar:
+      login: Войти с помощью GitHub
+      logout: Выйти
+    home: Анализатор репозиториев

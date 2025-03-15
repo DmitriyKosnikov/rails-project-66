@@ -45,6 +45,8 @@ group :development, :test do
 
   # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
   gem 'brakeman', require: false
+
+  gem 'dotenv'
 end
 
 group :development do
@@ -58,7 +60,31 @@ group :test do
   gem 'selenium-webdriver'
 end
 
+group :production do
+  gem 'pg'
+end
+
 # Sentry SDK
 gem 'sentry-rails'
 gem 'sentry-ruby'
 gem 'stackprof'
+
+# Gems for tests
+gem 'faker'
+gem 'minitest'
+gem 'minitest-power_assert'
+
+# Linters
+gem 'slim'
+gem 'slim_lint'
+gem 'slim-rails'
+
+gem 'simple_form'
+
+# Authentification
+gem 'omniauth'
+gem "omniauth-rails_csrf_protection"
+gem 'omniauth-github', '~> 2.0.0'
+
+# Work with repositories
+gem 'octokit'

@@ -10,7 +10,7 @@ class Web::AuthController < ApplicationController
     user.email = auth['info']['email']
     user.image_url = auth['info']['image']
     user.token = auth['credentials']['token'] # Токен пользователя, потребуется нам позднее
-  
+
     user.save!
 
     session[:user_id] = user.id

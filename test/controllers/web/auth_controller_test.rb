@@ -8,18 +8,18 @@ class Web::AuthControllerTest < ActionDispatch::IntegrationTest
 
   test 'create' do
     auth_hash = {
-        provider: 'github',
-        uid: '12345',
-        info: {
-          email: Faker::Internet.email,
-          name: Faker::Name.first_name,
-          nickname: Faker::Internet.username,
-          image: Faker::Avatar.image
-        },
-        credentials: {
-          token: 'fake_token'
-        }
+      provider: 'github',
+      uid: '12345',
+      info: {
+        email: Faker::Internet.email,
+        name: Faker::Name.first_name,
+        nickname: Faker::Internet.username,
+        image: Faker::Avatar.image
+      },
+      credentials: {
+        token: 'fake_token'
       }
+    }
 
     OmniAuth.config.mock_auth[:github] = OmniAuth::AuthHash::InfoHash.new(auth_hash)
 

@@ -1,12 +1,12 @@
 databases:
-  - name: bulletin-board
-    databaseName: bulletin-board
+  - name: github-quality
+    databaseName: github-quality
     user: bulletin-board
     plan: free
 
 services:
   - type: web
-    name: bulletin-board
+    name: github-quality
     runtime: ruby
     plan: free
     buildCommand: "./bin/render-build.sh"

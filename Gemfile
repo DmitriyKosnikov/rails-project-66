@@ -47,6 +47,8 @@ group :development, :test do
   gem 'brakeman', require: false
 
   gem 'dotenv'
+  gem 'rubocop', require: false
+  gem 'rubocop-rails', require: false
 end
 
 group :development do

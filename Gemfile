@@ -60,6 +60,7 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
   gem 'selenium-webdriver'
+  gem 'webmock'
 end
 
 group :production do
@@ -90,3 +91,6 @@ gem "omniauth-rails_csrf_protection"
 
 # Work with repositories
 gem 'octokit'
+
+# enumerize
+gem 'enumerize'

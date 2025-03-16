@@ -1,0 +1,10 @@
+ru:
+  repositories:
+    actions:
+      create_success: Репозиторий был успешно добавлен!
+      add_new: Добавить
+    labels:
+      full_name: Название
+      language: Язык
+      created_at: Дата создания
+      updated_at: Дата обновления

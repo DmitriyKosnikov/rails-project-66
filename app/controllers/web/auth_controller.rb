@@ -15,14 +15,14 @@ class Web::AuthController < ApplicationController
 
     session[:user_id] = user.id
 
-    redirect_to root_path, notice: t('.sign_in')
+    redirect_to root_path, notice: t('application.confirmations.sign_in')
   rescue StandardError
-    redirect_to root_path, alert: t('.error')
+    redirect_to root_path, alert: t('application.confirmations.error')
   end
 
   def destroy
     session[:user_id] = nil
 
-    redirect_to root_path, notice: t('.sign_out')
+    redirect_to root_path, notice: t('application.confirmations.sign_out')
   end
 end
